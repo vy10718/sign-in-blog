@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<div class="container" >
+  <div class="jumbotron centered" style="background-image: url('images/popcorn.png');">
+    <i class="fa fa-film fa-10x" aria-hidden="true"></i>
+    <h1 class="display-3">REVIEW BLOGS</h1>
+
+
+    <form action="/submit" method="POST">
+
+      <div class="form-group">
+
+        <input type="text" class="form-control text-center" name="review" placeholder="ADD BLOG">
+      </div>
+      <button type="submit" class="btn btn-dark">ADD</button>
+    </form>
+
+
+  </div>
+</div>
+<%- include('partials/footer') %>

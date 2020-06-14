@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+  <body>
+    <div class="jumbotron text-center" style="background-image: url('images/popcorn.png');">
+      <div class="container">
+       <i class="fa fa-film fa-10x" aria-hidden="true"></i>
+        <h1 class="display-3">FILMY BLOGS</h1>
+        <% userwithreviews.forEach(function(user){ %>
+           <p class="review-text"><%=user.review%></p>
+        <% }) %>
+
+
+
+
+        <hr>
+        <a class="btn btn-light btn-outline-danger" href="/logout" role="button">Log Out</a>
+        <a class="btn btn-light btn-outline-info" href="/submit" role="button">ADD BLOG</a>
+      </div>
+    </div>
+
+    <%- include('partials/footer') %>
